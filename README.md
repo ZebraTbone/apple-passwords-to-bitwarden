@@ -79,7 +79,7 @@ This project started as a way to solve a common pain: getting years of saved log
 
 Apple’s built‑in password storage works reasonably well inside the Apple ecosystem, but it is not designed as a portable, cross‑platform password manager. Export and import options are limited, automation is minimal, and it is harder to audit or extend your setup compared with dedicated tools.
 
-Bitwarden focuses on password management as its core product: it is open‑source, supports multiple platforms, and provides documented import/export and advanced features like shared vaults and strong client‑side encryption. For users who care about data portability, independent security review, and long‑term flexibility, moving critical credentials into a specialized manager like Bitwarden can be a more privacy‑ and security‑aligned choice than relying solely on a vendor‑locked keychain.
+Bitwarden focuses on password management as its core product. It is open‑source, supports multiple platforms, and provides documented import/export and advanced features like shared vaults and strong client‑side encryption. For users who care about data portability, independent security review, and long‑term flexibility, moving critical credentials into a specialized manager like Bitwarden can be a more privacy‑ and security‑aligned choice than relying solely on a vendor‑locked keychain.
 
 ## Features
 

